@@ -1,0 +1,108 @@
+/* PALETA DE COLORES: Morado, Rosado, Amarillo y Blanco */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2D1B4D;
+    color: #FFFFFF;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* NAVEGACION */
+header {
+    background-color: #1a112e;
+    padding: 20px 0;
+    border-bottom: 3px solid #FF2E63;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD369;
+}
+
+nav ul { list-style: none; margin-top: 10px; }
+nav ul li { display: inline; margin: 0 15px; }
+nav ul li a { color: #FFFFFF; text-decoration: none; font-weight: bold; }
+nav ul li a:hover { color: #FF2E63; }
+
+/* HERO */
+.hero {
+    padding: 180px 20px 100px 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url(https://wallpapers.com/images/featured/fondos-de-pantalla-de-anime-en-hd-prr1y1k5gqxfcgpv.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-accion {
+    display: inline-block;
+    background-color: #FF2E63;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* SECCIONES */
+section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
+.titulo { color: #FFD369; margin-bottom: 40px; font-size: 32px; border-bottom: 2px solid #FF2E63; display: inline-block; }
+
+/* TARJETAS */
+.tarjeta {
+    background-color: #3d2b5e;
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    vertical-align: top;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #FF2E63;
+    text-align: left;
+}
+
+.tarjeta-img { width: 100%; height: 150px; background-size: cover; background-position: center; }
+.tarjeta-info { padding: 15px; }
+
+/* CRONOGRAMA */
+.tabla-horario {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1a112e;
+}
+.tabla-horario th, .tabla-horario td {
+    padding: 15px;
+    border: 1px solid #FF2E63;
+}
+.tabla-horario th { background-color: #FF2E63; color: white; }
+
+/* UBICACION */
+
+.img-referencial {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border: 3px solid #FFD369;
+    border-radius: 10px;
+    background-image: url('https://images.unsplash.com/photo-1511578319446-58947623d01b?q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+}
+
+/* FOOTER */
+footer { background-color: #1a112e; padding: 60px 20px; border-top: 3px solid #FF2E63; }
+.redes-iconos a { color: #FFD369; font-size: 40px; margin: 0 20px; text-decoration: none; }

@@ -1,0 +1,132 @@
+[span_2](start_span)/* PALETA DE COLORES: Morado, Rosado, Amarillo y Blanco[span_2](end_span) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; [span_3](start_span)/* Navegación suave entre secciones[span_3](end_span) */
+}
+
+body {
+    font-family: 'Arial', sans-serif; [span_4](start_span)/* Tipografía legible[span_4](end_span) */
+    background-color: #2D1B4D; [span_5](start_span)[span_6](start_span)/* Color principal[span_5](end_span)[span_6](end_span) */
+    color: #FFFFFF;
+    line-height: 1.6;
+    text-align: center;
+}
+
+[span_7](start_span)/* NAVEGACIÓN Y ENCABEZADO[span_7](end_span) */
+header {
+    background-color: #1a112e;
+    padding: 20px 0;
+    border-bottom: 3px solid #FF2E63; [span_8](start_span)/* Color secundario[span_8](end_span) */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD369; [span_9](start_span)/* Color de acento[span_9](end_span) */
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FF2E63;
+}
+
+[span_10](start_span)/* SECCIÓN HERO (PRINCIPAL)[span_10](end_span) */
+.hero {
+    padding: 180px 20px 100px 20px;
+    background-color: #3d2b5e;
+    [span_11](start_span)[span_12](start_span)/* Espacio para el banner visual[span_11](end_span)[span_12](end_span) */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('TU_IMAGEN_BANNER.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #FFD369;
+    margin-bottom: 10px;
+}
+
+.btn-accion {
+    display: inline-block;
+    background-color: #FF2E63;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 18px; [span_13](start_span)[span_14](start_span)/* Resaltar botón principal[span_13](end_span)[span_14](end_span) */
+}
+
+[span_15](start_span)/* CONTENEDORES Y SECCIONES[span_15](end_span) */
+section {
+    padding: 70px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.titulo-seccion {
+    color: #FFD369;
+    margin-bottom: 40px;
+    font-size: 30px;
+    border-bottom: 2px solid #FF2E63;
+    display: inline-block;
+}
+
+[span_16](start_span)[span_17](start_span)/* TARJETAS DE ACTIVIDADES (Sin Flexbox)[span_16](end_span)[span_17](end_span) */
+.tarjeta {
+    background-color: #3d2b5e;
+    display: inline-block;
+    width: 30%; /* Tres columnas aproximadamente */
+    margin: 10px;
+    padding: 15px;
+    vertical-align: top;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.img-placeholder {
+    background-color: #222;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+[span_18](start_span)/* PIE DE PÁGINA[span_18](end_span) */
+footer {
+    background-color: #1a112e;
+    padding: 50px 20px;
+    border-top: 4px solid #FF2E63;
+}
+
+.redes a {
+    color: #FFD369;
+    margin: 0 10px;
+    text-decoration: none;
+}
