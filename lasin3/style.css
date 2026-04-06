@@ -1,0 +1,127 @@
+/* CONFIGURACIÓN GLOBAL (Variables) */
+:root {
+    /* Colores Principales */
+    --color-primario: #6c5ce7;      /* Morado vibrante */
+    --color-secundario: #ff7675;    /* Rosado */
+    --color-acento: #fdcb6e;        /* Amarillo */
+    --color-oscuro: #1a1a1b;        /* Negro moderno */
+    --color-gris-claro: #f4f7f6;
+    
+    /* CONTROL DE IMÁGENES DE FONDO */
+    /* Cambia 'fondo.jpg' por el nombre de tus archivos */
+    --img-fondo-hero: url('https://media.gettyimages.com/id/2224846458/es/foto/shanghai-china-anime-enthusiasts-visit-the-bilibiliworld-2025-at-shanghai-national-convention.jpg?s=612x612&w=0&k=20&c=thS8-khM69VfSlvBgE0SDpW5YDQTcxZ2aHu71YVbBVk='); 
+    --img-fondo-pagina: url(''); 
+}
+
+body {
+    background-image: var(--img-fondo-pagina);
+    background-attachment: fixed; /* El fondo se queda quieto al hacer scroll */
+    background-color: var(--color-gris-claro);
+    color: #333;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: var(--color-oscuro);
+    color: white;
+    padding: 25px 0;
+    border-bottom: 5px solid var(--color-primario);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 0.9em;
+}
+
+/* SECCIÓN HERO (Banner Principal) */
+.seccion-hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), var(--img-fondo-hero);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+}
+
+.texto-destacado {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.subtitulo-hero {
+    font-size: 1.4em;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+/* CONTENEDORES DE SECCIÓN */
+.contenedor {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h2 {
+    color: var(--color-primario);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* ESTILO DE LA GALERÍA (Sin Flexbox) */
+.foto-galeria {
+    width: 22%; /* Permite que entren 4 imágenes por fila aproximadamente */
+    margin: 1%;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.foto-galeria:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    border-color: var(--color-acento);
+}
+
+/* TARJETAS DE ACTIVIDAD */
+.tarjeta-info {
+    text-align: left;
+    border-left: 6px solid var(--color-secundario);
+    background: #fff;
+    margin: 15px 0;
+    padding: 15px 25px;
+}
+
+/* BOTÓN ESTILO "FIRST GLOBAL" */
+.btn-principal {
+    background-color: var(--color-acento);
+    color: #000;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    box-shadow: 0 4px 15px rgba(253, 203, 110, 0.4);
+}
+
+.borde-redondeado {
+    border-radius: 15px;
+}
+
+footer {
+    background-color: var(--color-oscuro);
+    color: #888;
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+#ubicacion img{
+    width: 300px;
+}
