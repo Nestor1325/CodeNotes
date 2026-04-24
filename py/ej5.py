@@ -1,4 +1,4 @@
-#CORREGIR
+#--------------------------INCOMPLETO , CORREGIR-------------------------------------
 
 n = int(input(">"))
 swa = False
